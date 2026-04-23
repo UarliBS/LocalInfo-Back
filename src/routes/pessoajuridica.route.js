@@ -13,7 +13,7 @@ PessoaJuridicaRouter.use(autMiddlewarePessoaJuridica);
 PessoaJuridicaRouter.get("/", pessoajuridicaController.findAll) //busca todo users
 
 PessoaJuridicaRouter.use(validPessoaJuridica);
-PessoaJuridicaRouter.get("/findById/:id?", pessoajuridicaController.findById) //busca users id
+PessoaJuridicaRouter.get("/findById/:id", pessoajuridicaController.findById) //busca users id
 PessoaJuridicaRouter.patch("/update/:id", pessoajuridicaController.update) //atualiza user id
 
 export default PessoaJuridicaRouter;
